@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Café Oslo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap" rel="stylesheet">
   </head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-KYXWSHLXDS"></script>
@@ -15,8 +19,30 @@
     gtag('config', 'G-KYXWSHLXDS');
   </script>
   <body>
-    <header>
-      <h1>FRESHLY MADE, EVERY DAY</h1>
+    <header class="intro">
+      <span class="logo">
+			Café
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" height="64" width="64">
+        <path
+          d="M184 48C170.7 48 160 58.7 160 72C160 110.9 183.4 131.4 199.1 145.1L200.2 
+          146.1C216.5 160.4 224 167.9 224 184C224 197.3 234.7 208 248 208C261.3 208 272 197.3 
+          272 184C272 145.1 248.6 124.6 232.9 110.9L231.8 109.9C215.5 95.7 208 88.1 208 72C208 
+          58.7 197.3 48 184 48zM128 256C110.3 256 96 270.3 96 288L96 480C96 533 139 576 192 
+          576L384 576C425.8 576 461.4 549.3 474.5 512L480 512C550.7 512 608 454.7 608 384C608 
+          313.3 550.7 256 480 256L128 256zM480 448L480 320C515.3 320 544 348.7 544 384C544 419.3 
+          515.3 448 480 448zM320 72C320 58.7 309.3 48 296 48C282.7 48 272 58.7 272 72C272 110.9 
+          295.4 131.4 311.1 145.1L312.2 146.1C328.5 160.4 336 167.9 336 184C336 197.3 346.7 208 
+          360 208C373.3 208 384 197.3 384 184C384 145.1 360.6 124.6 344.9 110.9L343.8 109.9C327.5 
+          95.7 320 88.1 320 72z"
+        />
+      </svg>
+      Oslo
+		  </span>
+      <a href="#menu" class="menu" class="lanzador-menu" id="enlace-menu">
+      <h1 class="intro">FRESHLY MADE, EVERY DAY</h1>
+      <p>
+				<hr class="separador"/>
+			</p>
       <p>
         Chocolate cake chocolate cake pie candy canes chocolate cake bonbon. I love marzipan liquorice 
         I love cake chupa chups. Pie danish macaroon ice cream ice cream. Bonbon sweet bonbon jelly beans 
@@ -24,27 +50,27 @@
       </p>
     </header>
     <main>
-      <section>
+      <section class="brunch">
         <h2>COME TO OUR SUNDAY BRUNCH</h2>
         <p>
           Sesame snaps icing chocolate bar. I love donut powder sesame snaps. Jelly-o topping caramels. 
           Sugar plum I love gummi bears.</p>
       </section>
-      <section>
+      <section class="fiestas">
         <h2>CELEBRATE YOUR HOLIDAYS WITH US</h2>
         <p>
           Bonbon sweet bonbon jelly beans jelly-o I love lollipop. Cookie sesame snaps bear claw.
           Cake dragée danish. Powder I love liquorice macaroon.</p>
       </section>
-      <section>
+      <section class="desayunos">
         <h2>COME FOR BREAKFAST</h2>
         <p>
           Bonbon topping I love sweet roll I love candy icing chocolate jelly. Pie soufflé sweet. 
           Apple pie bonbon caramels powder.
         </p>
-        <p>DISCOVER OUR PRODUCTS</p>
+        <p class="boton">DISCOVER OUR PRODUCTS</p>
       </section>
-      <section>
+      <section class="pan">
         <h2>FRESHLY BAKED BREAD</h2>
         <p>
           Cupcake danish I love halvah bonbon icing donut.
@@ -52,14 +78,20 @@
           Chocolate cake wafer pudding muffin wafer sweet roll I love chupa chups. Apple pie jujubes ice cream sugar plum topping.
         </p>
       </section>
-      <section>
+      <section class="tartas">
+        <p class="icono">
+					<img src="images/icon2.png" alt="Tarta" />
+				</p>
         <h2>CAKES FOR EVERY DAY</h2>
         <p>
           Cookie cake jelly beans chocolate cake carrot cake croissant icing. Caramels liquorice sesame snaps sugar plum I love bonbon. 
           I love I love halvah.
         </p>
       </section>
-      <section>
+      <section class="dulces">
+        <p class="icono">
+					<img src="images/icon3.png" alt="Dulce" />
+				</p>
         <h3>TRY OUR SWEETS</h3>
         <p>
           Caramels liquorice sesame snaps sugar plum I love bonbon. I love I love halvah. 
@@ -67,7 +99,10 @@
           Jelly beans chocolate brownie gummi bears dragée jelly-o.
         </p>
       </section>
-      <section>
+      <section class="ingredientes">
+        <p class="icono">
+					<img src="images/icon4.png" alt="Trigo" />
+				</p>
         <h3>ORGANIC INGREDIENTS</h3>
         <p>
           Carrot cake fruitcake cheesecake muffin lollipop croissant dessert halvah. 
@@ -79,14 +114,14 @@
         <h3>CONTACT US</h3>
         <p>If you'd like to make a reservation, have a suggestion, or just want to say hello, write to us at: <a href="mailto:cafeoslo@cafeoslo.es">cafeoslo@cafeoslo.es</a></p>
       </section>
-      <section>
+      <section class="ubicacion">
         <h2>DO YOU KNOW WHERE WE ARE?</h2>
       </section>
     </main>
     <footer>
       <p>September 2025 · All rights reserved</p>
     </footer>
-    <nav>
+    <nav id="menu" class="navegacion">
       <ul>
         <li>
           <a href="#">The Place</a>
@@ -103,5 +138,6 @@
         </li>
       </ul>
     </nav>
+    <script src="js/javascript.js"></script
   </body>
 </html>
