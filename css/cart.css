@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+	font-family: "Open Sans", serif;
+	line-height: 1.8;
+	max-width: 850px;
+	margin: 30px auto;
+	padding: 15px 30px;
+    background-color: #d03b40;
+    color: #f5f0ed;
+}

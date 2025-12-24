@@ -1,0 +1,444 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+	position: relative;
+	font-family: "Open Sans", serif;
+	line-height: 1.8;
+	max-width: 850px;
+	margin: 30px auto;
+	padding: 15px 30px;
+}
+
+header{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+    background-image: url(../images/image1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+span{
+	position: relative;
+}
+
+h1{
+	font-size: 24px;
+	font-weight: bold;
+	margin: 0;
+}
+
+h2{
+	font-size: 28px;
+	font-weight: bold;
+	margin: 0;
+}
+
+h3{
+	margin: 0;
+}
+
+p{
+	font-size: 16px;
+	font-weight: normal;
+	margin: 0;
+}
+
+ul{
+    margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.contacto a:link{
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #d03b40;
+}	
+	
+.ubicacion a:link{
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #ded6c0;
+}
+
+.navegacion a:link{
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;
+}
+
+.intro{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	color: #f5f0ed;
+	text-align: center;
+}
+
+.brunch{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	height: 200px;
+	width: 100%;
+	color: #ded6c0;
+	background-color: #d03b40;
+	text-align: center;
+}
+
+.fiestas{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	height: 200px;
+	color: #d03b40;
+	background-color: #ded6c0;
+	text-align: center;
+}
+
+.desayunos{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	height: 300px;
+	color: #f5f0ed;
+	background-image: url(../images/image2.jpg);
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+}
+.pan{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	height: 400px;
+	width: 100%;
+}
+
+.tartas{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	height: 400px;
+	width: 100%;
+}
+
+.dulces{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	height: 400px;
+	width: 100%;
+}
+	
+.ingredientes{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	height: 400px;
+	width: 100%;
+}
+
+.contacto{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	height: 200px;
+	color: #d03b40;
+	background-color: #ded6c0;
+	text-align: center;
+}
+
+.ubicacion{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	height: 200px;
+	color: #ded6c0;
+	background-color: #d03b40;
+	text-align: center;
+}
+
+.derechos{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	color: #f5f0ed;
+	background-color: #241d1b;
+}
+
+.boton{
+	font-size: 14px;
+	border: 2px solid #f5f0ed;	
+	margin: 20px 80px;
+	text-align: center;
+}
+
+
+.separador{
+	width: 100px;
+	border: 1px solid #ded6c0;
+	margin: 20px auto;
+}
+
+.navegacion a{
+	display: block;
+	text-decoration: none;
+	color: #2d211f;
+	border-bottom: 1px solid #2d211f;
+}
+
+.lanzador-menu {
+	text-decoration: none;
+	color: #fff;
+	padding: 6px 10px;
+	border-radius: 3px;
+}
+
+.logo{
+	font-family: "Pacifico", cursive;
+	color: #ded6c0;
+	font-size: 25px;
+	text-align: left;
+	margin-top: 10px;
+}
+
+.logo svg{
+	color: #fff;
+}
+
+.menu svg{
+	background-color: #d03b40;
+	margin: 10px -90px 0 0;
+}
+
+@media screen and (max-width: 600px){	
+	.js .navegacion{
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height .5s;
+		position: absolute;
+		top: 56px;
+		left: 30px;
+		right: 30px;
+		background-color: #d03b40;
+	}
+
+	.js .navegacion a{
+		padding: 5px 10px;
+		color: #fff;
+		border-top: 1px solid rgba(255 255 255 .4);
+	}
+	
+	.js .navegacion.menu-desplegado{
+		max-height: 200px;
+	}
+}
+
+@media screen and (min-width: 601px){
+	
+	.lanzador-menu{
+		display: none;
+	}
+
+	.menu{
+		display: none;
+	}
+	
+	.navegacion{
+		position: absolute;
+		top: -30px;
+	}
+	
+	body{
+		margin-top: 60px;
+	}
+	
+	.navegacion li{
+		display: inline-block;
+		margin-right: 15px;
+	}
+	
+	.intro{
+		display: block;
+	}
+
+	.brunch{
+		height: 300px;
+		width: 50%;
+		display: inline-block;
+	}
+	
+	.fiestas{
+		height: 300px;
+		width: 50%;
+		display: inline-block;
+		float: left;
+	}
+	
+	.desayunos{
+		height: 300px;
+		width: 100%;
+		display: block;
+	}
+	
+	.pan{
+		height: 200px;
+		width: 50%;
+		display: inline-block;
+	}
+	
+	.tartas{
+		height: 200px;
+		width: 50%;
+		display: inline-block;
+		float: left;
+	}
+	
+	.dulces{
+		height: 200px;
+		width: 50%;
+		display: inline-block;
+	}
+	
+	.ingredientes{
+		height: 200px;
+		width: 50%;
+		display: inline-block;
+		float: left;
+	}
+	
+	.contacto{
+		height: 200px;
+		width: 50%;
+		display: inline-block;
+	}
+
+	.ubicacion{
+		height: 200px;
+		width: 50%;
+		display: inline-block;
+		float: left;
+	}
+	.derechos{
+		height: 30px;
+		width: 100%;
+		display: block;
+	}	
+	.pan img{
+		width: 50%;
+		display: inline-block;
+	}
+	
+	.pan h3{
+		width: 50%;
+		font-size: 50%;
+		display: inline-block;
+	}	
+	
+	.pan p{
+		width: 50%;
+		font-size: 50%;
+		display: inline-block;
+		float: left;
+	}
+	
+	.tartas img{
+		width: 50%;
+		display: inline-block;
+	}
+	
+	.tartas h3{
+		width: 50%;
+		font-size: 50%;
+		display: inline-block;
+	}		
+	
+	.tartas p{
+		width: 50%;
+		font-size: 50%;
+		display: inline-block;
+		float: left;
+	}
+	
+	.dulces img{
+		width: 50%;
+		display: inline-block;
+	}	
+	
+	.dulces h3{
+		width: 50%;
+		font-size: 50%;
+		display: inline-block;
+	}
+	
+	.dulces p{
+		width: 50%;
+		font-size: 50%;
+		display: inline-block;
+		float: left;
+	}
+	
+	.ingredientes img{
+		width: 50%;
+		display: inline-block;
+	}	
+	
+	.ingredientes h3{
+		width: 50%;
+		font-size: 50%;
+		display: inline-block;
+	}	
+	
+	.ingredientes p{
+		width: 50%;
+		font-size: 50%;
+		display: inline-block;
+		float: left;
+	}
+	
+	.logo{
+		display: inline-block;
+		margin-left: 20px;
+		text-align: left;
+		left: -300px;
+
+	}
+	
+	.navegacion{
+		position: absolute;
+		margin-top: 60px;
+		margin-left: 300px;
+	}
+	
+	.navegacion a:link{
+		color: #ded6c0;
+		border-bottom: none;
+	}
+
+	.navegacion a:visited{
+		color: #ded6c0;
+		border-bottom: none;
+	}
+	
+}
